@@ -10,6 +10,9 @@ module.exports = (isProd) => ({
     darkMode: false, // or 'media' or 'class'
     theme: {
       extend: {},
+      fontFamily: {
+        sans: ['Circular Std Book', 'sans-serif']
+      }
     },
     variants: {
       extend: {},

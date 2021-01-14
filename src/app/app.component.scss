@@ -1,0 +1,31 @@
+.menu-option {
+    @apply px-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    height: 100%;
+
+    a {
+        padding-bottom: 2px;
+    }
+
+    &.active > .bottom-line,
+    &:hover > .bottom-line {
+        background-color: theme('colors.gray.100');
+    }
+
+};
+
+.menu-middle {
+    max-width: 30rem;
+}
+
+.bottom-line {
+    display: block;
+    height: 2px;
+    width: 20%;
+    transition: ease-out .3s;
+    background-color: transparent;
+}
